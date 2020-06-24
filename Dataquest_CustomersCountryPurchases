@@ -35,4 +35,4 @@ SELECT
     cbc.max_purchase total_purchased
 FROM customer c
 INNER JOIN country_best_customer cbc ON cbc.customer_id = c.customer_id
-ORDER BY 1 ASC
+ORDER BY country ASC
