@@ -3,4 +3,4 @@ These queries were part of exercises I completed in the Dataquest Data Science b
 Data pulled in these queries comes from the Dataquest Chinook database.
 
 
-![sql1](/mibieder/figures/chinook-schema.svg)
+![sql1](chinook-schema.svg)
