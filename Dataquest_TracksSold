@@ -1,4 +1,3 @@
-%%sql
 WITH usa_tracks_sold AS
    (
     SELECT il.* FROM invoice_line il
@@ -6,13 +5,13 @@ WITH usa_tracks_sold AS
     INNER JOIN customer c on i.customer_id = c.customer_id
     WHERE c.country = "USA"
    )
-
 SELECT
-    g.name genre,
-    count(uts.invoice_line_id) tracks_sold,
-    cast(count(uts.invoice_line_id) AS FLOAT) / (
-        SELECT COUNT(*) from usa_tracks_sold
-    ) percentage_sold
+   g.name genre,
+   count(uts.invoice_line_id) tracks_sold,
+   cast(count(uts.invoice_line_id) AS FLOAT) / 
+   (
+    SELECT COUNT(*) from usa_tracks_sold
+   ) percentage_sold
 FROM usa_tracks_sold uts
 INNER JOIN track t on t.track_id = uts.track_id
 INNER JOIN genre g on g.genre_id = t.genre_id
