@@ -1,3 +1,6 @@
+// Practiced writing a subquery that returns playlist information.
+// Playlist information returned includes the number of tracks and length (in seconds) of each playlist.
+
 WITH playlist_info AS
     (
      SELECT
