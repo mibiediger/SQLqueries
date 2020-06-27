@@ -1,3 +1,6 @@
+// Created three subqueries - customer purchases by country, the max purchase by country and the customer who matches the max purchase by country.
+// This allows me to return the customer (first and last name) with the most purchases by country.
+
 WITH
     customer_country_purchases AS
         (
