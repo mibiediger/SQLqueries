@@ -1,3 +1,6 @@
+// This query looks at tracks sold in the U.S. to determine which genres did the best.
+// This information would help decide which future albums to stock based on the most successful genres.
+
 WITH usa_tracks_sold AS
    (
     SELECT il.* FROM invoice_line il
