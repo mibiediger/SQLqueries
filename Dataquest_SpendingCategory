@@ -1,5 +1,6 @@
 // This query takes advantage of case statements to group customers into spending categories.
 // Customers are either "small spenders" (less than $40) or "big spenders" (greater than $100).
+// This is an exercise and doesn't account for people who spend between $40 and $100.
 
 SELECT
    c.first_name || " " || c.last_name customer_name,
