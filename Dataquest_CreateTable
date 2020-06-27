@@ -1,0 +1,11 @@
+// Created a wishlist_track table using SQLite shell in Dataquest.
+// Both wishlist_id and track_id serve as primary keys and foreign keys.
+
+sqlite3 chinook.db
+CREATE TABLE wishlist_track (
+    wishlist_id INTEGER,
+    track_id INTEGER,
+    PRIMARY KEY (wishlist_id, track_id),
+    FOREIGN KEY (wishlist_id) REFERENCES wishlist(wishlist_id),
+    FOREIGN KEY (track_id) REFERENCES track(track_id)
+);
