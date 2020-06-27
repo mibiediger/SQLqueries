@@ -1,3 +1,7 @@
+// This query uses a subquery to return album and artist information as part of the invoices.
+// The query is then grouped by album, sorted by number of tracks purchased.
+// The limit is to return the "top 5 albums" by number of tracks purchased.
+
 SELECT ta.album, 
        ta.artist_name artist, 
        COUNT(*) tracks_purchased
