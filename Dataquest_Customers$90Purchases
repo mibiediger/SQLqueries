@@ -1,3 +1,6 @@
+// Created a view that provides customers who spent greater than $90.
+// This and the other queries were part of exercises in Dataquest.
+
 CREATE VIEW chinook.customer_gt_90_dollars AS 
      SELECT c.* 
      FROM chinook.customer c
